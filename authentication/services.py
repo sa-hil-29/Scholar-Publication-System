@@ -6,7 +6,7 @@ def get_faculty_papers_by_email(email):
     params = {
         "engine": "google_scholar",
         "q": email,
-        "api_key": "a47db9b3899471d7aabb29628737a9ac9cf8e19bc8a6f8dd6da18e2994b385b6"
+        "api_key": "a47db9b3899471d7aabb29628737a9ac9cf8e19bc8a6f8dd6da18e2994b385b6"  #replace this with your api key
     }
     search = GoogleSearch(params)
     results = search.get_dict()
@@ -32,7 +32,7 @@ def get_papers_by_author_id(email,author):
     params = {
         "engine": "google_scholar_author",
         "author_id": author_id,
-        "api_key": "a47db9b3899471d7aabb29628737a9ac9cf8e19bc8a6f8dd6da18e2994b385b6"
+        "api_key": "a47db9b3899471d7aabb29628737a9ac9cf8e19bc8a6f8dd6da18e2994b385b6"   #replace this with your api key
     }
     search = GoogleSearch(params)
     result = search.get_dict()
